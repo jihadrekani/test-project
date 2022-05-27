@@ -1,0 +1,206 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+/*end global rules*/
+
+/*start header*/
+
+.header{
+    height: 300px;
+    width: 100%;
+    background:url(/pexels-cottonbro-3826678.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color:rgb(15 168 227 / 50%);
+}
+
+.header .overlay h1{
+    font-size: 30px;
+    margin-top: 33px;
+}
+.header .overlay .plan {
+    border: 2px solid #fff;
+    font: size 20px;
+    width: 48%;
+    padding: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+
+}
+
+.header .overlay .order {
+    border: 2px solid #fff;
+    font: size 20px;
+    padding: 10px;
+    margin: 30px 1% 0 1%;
+}
+
+/*end header*/
+
+/* star features*/
+
+
+.features .feat{
+    background-color: #fffdfd;
+    /* margin-right: 3px; */
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 0 10px 0 0;
+    margin-bottom: 20px;
+    
+    
+}
+
+.features .feat p{
+  line-height: 1.2;
+  margin: 0px 5px 5px;
+}
+.features .feat h2{
+    margin: 5px 5px;
+}
+
+
+@media (max-width:767px){
+    .features .feat{
+        text-align: center;
+    }
+}
+
+@media (min-width:768px){
+    .features .feat{
+width: 50%;
+    }
+}
+
+@media (min-width:992px){
+    .features .feat{
+    width:33.3333%;}}
+/* end features*/
+.about{
+    background-color: rgb(60, 168, 163);
+    margin-top: 10px;
+    
+
+}
+.about p{
+    margin-left: 30px;
+    margin-top: -15px;
+    margin-right: 30px;
+    
+}
+
+/*start our work*/
+@media (min-width:1200px){
+    .our-work .image{
+        width: 25%
+            }
+}
+
+
+
+
+/*end our work*/
+
+@media (max-width:767px) {
+    .header .overlay .plan{
+        float: none;
+        margin: 0 auto 10px ;
+    }
+}
+
+
+@media (max-width:767px){/*mobile and tablet*/
+/*there is no (container) because we element to full a screen*/
+.visible-xs{
+    display: block !important;
+}
+.responsive-design{
+    text-align: center;
+    font-size: 20x;
+}
+}
+
+
+@media (min-width:768px){/* small screen */
+    .container{
+        width: 780px; /*30px is for padding*/
+    }
+    .visible-sm{
+        display: block !important;
+    }
+   
+    
+}
+
+@media (min-width:992px){/*medium screen*/
+    .container{
+        width: 970px;
+    }
+    .visible-md{
+        display: block !important
+    }
+}
+
+@media (min-width:1200px){/*large screen*/
+    .container{
+        width: 1200px;
+    }
+    .visible-lg{
+        display: block !important;
+    }
+}
+
+
+/* start my framework*/
+
+.container{
+    margin: auto; /*the container will be at center*/
+}
+
+.text-center{
+    text-align: center;
+}
+ 
+.clearfix{
+    clear: both;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{
+    display: none;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.h1{
+    font-size: 2em;
+
+}
+
+.responsive-design{
+    line-height: 1;
+    font-size: 20x;
+}
+
+/*end my framework*/
